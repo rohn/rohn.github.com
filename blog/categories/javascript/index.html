@@ -5,11 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Backbone.js with Pow - i am rohn</title>
+  <title>Category: JavaScript - i am rohn</title>
   <meta name="author" content="Rohn">
 
   
-  <meta name="description" content="I found myself in a situation where I needed to serve a static site (in reality a Backbone.js webapp) through my running Pow! installation. The &hellip;">
+  <meta name="description" content="Category: JavaScript">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://rohn.github.com/blog/2012/11/11/backbone-dot-js-with-pow/">
+  <link rel="canonical" href="http://rohn.github.comblog/categories/javascript/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -71,124 +71,35 @@
   <div id="main">
     <div id="content">
       <div>
-<article class="hentry" role="article">
+<article role="article">
   
   <header>
-    
-      
-        <h1 class="entry-title">Backbone.js With Pow</h1>
-      
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2012-11-11T09:23:00-06:00" pubdate data-updated="true">Nov 11<span>th</span>, 2012</time>
-        
-      </p>
+    <h1 class="entry-title">Category: JavaScript</h1>
     
   </header>
+  
+  <div id="blog-archives" class="category">
 
 
-<div class="entry-content"><p>I found myself in a situation where I needed to serve a <em>static</em> site (in reality a Backbone.js webapp) through my running Pow! installation. The solution was extremely easy to find but I thought I&#8217;d list it here anyway.</p>
 
-<p>The documentation indicates that your folder structure must include a public folder inside your project folder. This would have conflicted with the directory structure of the application that I&#8217;m contributing to, so I simply wrapped my project folder with a company folder, which in turn holds the public folder:</p>
+  
+  <h2>2012</h2>
 
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>/Users/username/Sites/mycompany/public/myproject</span></code></pre></td></tr></table></div></figure>
+<article>
+  
+<h1><a href="/blog/2012/11/11/avoiding-this/">Avoiding this</a></h1>
+<time datetime="2012-11-11T16:35:00-06:00" pubdate><span class='month'>Nov</span> <span class='day'>11</span> <span class='year'>2012</span></time>
 
-
-<p>or another way to view that is:</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>/Users/username/Sites/
-</span><span class='line'>  mycompany/
-</span><span class='line'>    public/
-</span><span class='line'>      myproject/
-</span><span class='line'>      myotherproject/</span></code></pre></td></tr></table></div></figure>
+<footer>
+  <span class="categories">posted in <a class='category' href='/blog/categories/javascript/'>JavaScript</a></span>
+</footer>
 
 
-<p>You still need to create the symbolic link from your site&#8217;s directory</p>
+</article>
 
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>cd ~/.pow
-</span><span class='line'>ln -s ~/Sites/mycompany</span></code></pre></td></tr></table></div></figure>
-
-
-<p>and now you simply access your static site via:</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>http://mycompany.dev/myproject/</span></code></pre></td></tr></table></div></figure>
-
-
-<p>Of course the easiest (perhaps better) solution is to install the <a href="https://github.com/rodreegez/powder">powder gem</a> and manually bring down the pow server when working on your non-pow projects.</p>
 </div>
 
-
-  <footer>
-    <p class="meta">
-      
   
-
-<span class="byline author vcard">Posted by <span class="fn">Rohn</span></span>
-
-      
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2012-11-11T09:23:00-06:00" pubdate data-updated="true">Nov 11<span>th</span>, 2012</time>
-      
-
-<span class="categories">
-  
-    <a class='category' href='/blog/categories/configuration/'>configuration</a>
-  
-</span>
-
-
-    </p>
-    
-      <div class="sharing">
-  
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://rohn.github.com/blog/2012/11/11/backbone-dot-js-with-pow/" data-via="rohn" data-counturl="http://rohn.github.com/blog/2012/11/11/backbone-dot-js-with-pow/" >Tweet</a>
-  
-  
-  
-</div>
-
-    
-    <p class="meta">
-      
-        <a class="basic-alignment left articlenav" href="/blog/2012/11/10/hello-world/" title="Previous Post: Hello World">&laquo; Hello World</a>
-      
-      
-        <a class="basic-alignment right articlenav" href="/blog/2012/11/11/avoiding-this/" title="Next Post: Avoiding this">Avoiding this &raquo;</a>
-      
-    </p>
-  </footer>
 </article>
 
 </div>

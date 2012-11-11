@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: JavaScript | i am rohn]]></title>
+  <link href="http://rohn.github.com/blog/categories/javascript/atom.xml" rel="self"/>
+  <link href="http://rohn.github.com/"/>
+  <updated>2012-11-11T16:41:29-06:00</updated>
+  <id>http://rohn.github.com/</id>
+  <author>
+    <name><![CDATA[Rohn]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Avoiding this]]></title>
+    <link href="http://rohn.github.com/blog/2012/11/11/avoiding-this/"/>
+    <updated>2012-11-11T16:35:00-06:00</updated>
+    <id>http://rohn.github.com/blog/2012/11/11/avoiding-this</id>
+    <content type="html"><![CDATA[<p>If there's one thing I'm hearing repeatedly while attending the <a href="http://frontendmasters.com">FrontEnd Masters Workshop Series</a> is that it is much more important to write readable code than to be worried about cute coding tricks or hyper-efficient code. Don't misunderstand, performance is important - or as <a href="http://getify.com">Kyle Simpson</a> says, "performant by default" - but not at the expense of maintainable code.</p>
+]]></content>
+  </entry>
+  
+</feed>
