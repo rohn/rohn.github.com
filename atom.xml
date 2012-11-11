@@ -4,7 +4,7 @@
   <title><![CDATA[i am rohn]]></title>
   <link href="http://rohn.github.com/atom.xml" rel="self"/>
   <link href="http://rohn.github.com/"/>
-  <updated>2012-11-11T08:18:41-06:00</updated>
+  <updated>2012-11-11T10:30:23-06:00</updated>
   <id>http://rohn.github.com/</id>
   <author>
     <name><![CDATA[Rohn]]></name>
@@ -12,6 +12,51 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Backbone.js with Pow]]></title>
+    <link href="http://rohn.github.com/blog/2012/11/11/backbone-dot-js-with-pow/"/>
+    <updated>2012-11-11T09:23:00-06:00</updated>
+    <id>http://rohn.github.com/blog/2012/11/11/backbone-dot-js-with-pow</id>
+    <content type="html"><![CDATA[<p>I found myself in a situation where I needed to serve a <em>static</em> site (in reality a Backbone.js webapp) through my running Pow! installation. The solution was extremely easy to find but I thought I&#8217;d list it here anyway.</p>
+
+<p>The documentation indicates that your folder structure must include a public folder inside your project folder. This would have conflicted with the directory structure of the application that I&#8217;m contributing to, so I simply wrapped my project folder with a company folder, which in turn holds the public folder:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>/Users/username/Sites/mycompany/public/myproject</span></code></pre></td></tr></table></div></figure>
+
+
+<p>or another way to view that is:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>/Users/username/Sites/
+</span><span class='line'>  mycompany/
+</span><span class='line'>    public/
+</span><span class='line'>      myproject/
+</span><span class='line'>      myotherproject/</span></code></pre></td></tr></table></div></figure>
+
+
+<p>You still need to create the symbolic link from your site&#8217;s directory</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>cd ~/.pow
+</span><span class='line'>ln -s ~/Sites/mycompany</span></code></pre></td></tr></table></div></figure>
+
+
+<p>and now you simply access your static site via:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>http://mycompany.dev/myproject/</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Of course the easiest (perhaps better) solution is to install the <a href="https://github.com/rodreegez/powder">powder gem</a> and manually bring down the pow server when working on your non-pow projects.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Hello World]]></title>

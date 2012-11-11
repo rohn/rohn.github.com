@@ -5,12 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Hello World - i am rohn</title>
+  <title>Backbone.js with Pow - i am rohn</title>
   <meta name="author" content="Rohn">
 
   
-  <meta name="description" content="
-">
+  <meta name="description" content="I found myself in a situation where I needed to serve a static site (in reality a Backbone.js webapp) through my running Pow! installation. The &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -19,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://rohn.github.com/blog/2012/11/10/hello-world/">
+  <link rel="canonical" href="http://rohn.github.com/blog/2012/11/11/backbone-dot-js-with-pow/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -77,7 +76,7 @@
   <header>
     
       
-        <h1 class="entry-title">Hello World</h1>
+        <h1 class="entry-title">Backbone.js With Pow</h1>
       
     
     
@@ -94,14 +93,50 @@
   
 
 
-<time datetime="2012-11-10T22:30:00-06:00" pubdate data-updated="true">Nov 10<span>th</span>, 2012</time>
+<time datetime="2012-11-11T09:23:00-06:00" pubdate data-updated="true">Nov 11<span>th</span>, 2012</time>
         
       </p>
     
   </header>
 
 
-<div class="entry-content">
+<div class="entry-content"><p>I found myself in a situation where I needed to serve a <em>static</em> site (in reality a Backbone.js webapp) through my running Pow! installation. The solution was extremely easy to find but I thought I&#8217;d list it here anyway.</p>
+
+<p>The documentation indicates that your folder structure must include a public folder inside your project folder. This would have conflicted with the directory structure of the application that I&#8217;m contributing to, so I simply wrapped my project folder with a company folder, which in turn holds the public folder:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>/Users/username/Sites/mycompany/public/myproject</span></code></pre></td></tr></table></div></figure>
+
+
+<p>or another way to view that is:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>/Users/username/Sites/
+</span><span class='line'>  mycompany/
+</span><span class='line'>    public/
+</span><span class='line'>      myproject/
+</span><span class='line'>      myotherproject/</span></code></pre></td></tr></table></div></figure>
+
+
+<p>You still need to create the symbolic link from your site&#8217;s directory</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>cd ~/.pow
+</span><span class='line'>ln -s ~/Sites/mycompany</span></code></pre></td></tr></table></div></figure>
+
+
+<p>and now you simply access your static site via:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>http://mycompany.dev/myproject/</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Of course the easiest (perhaps better) solution is to install the <a href="https://github.com/rodreegez/powder">powder gem</a> and manually bring down the pow server when working on your non-pow projects.</p>
 </div>
 
 
@@ -124,15 +159,21 @@
   
 
 
-<time datetime="2012-11-10T22:30:00-06:00" pubdate data-updated="true">Nov 10<span>th</span>, 2012</time>
+<time datetime="2012-11-11T09:23:00-06:00" pubdate data-updated="true">Nov 11<span>th</span>, 2012</time>
       
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/configuration/'>configuration</a>
+  
+</span>
 
 
     </p>
     
       <div class="sharing">
   
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://rohn.github.com/blog/2012/11/10/hello-world/" data-via="rohn" data-counturl="http://rohn.github.com/blog/2012/11/10/hello-world/" >Tweet</a>
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://rohn.github.com/blog/2012/11/11/backbone-dot-js-with-pow/" data-via="rohn" data-counturl="http://rohn.github.com/blog/2012/11/11/backbone-dot-js-with-pow/" >Tweet</a>
   
   
   
@@ -141,8 +182,8 @@
     
     <p class="meta">
       
+        <a class="basic-alignment left articlenav" href="/blog/2012/11/10/hello-world/" title="Previous Post: Hello World">&laquo; Hello World</a>
       
-        <a class="basic-alignment right articlenav" href="/blog/2012/11/11/backbone-dot-js-with-pow/" title="Next Post: Backbone.js with Pow">Backbone.js with Pow &raquo;</a>
       
     </p>
   </footer>
