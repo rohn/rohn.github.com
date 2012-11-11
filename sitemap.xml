@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
+    <url>
+        <loc>http://rohn.github.com/blog/2012/11/10/hello-world/</loc>
+        <lastmod>2012-11-11T08:12:25-06:00</lastmod>
+    </url>
+    <url>
+        <loc>http://rohn.github.com/blog/archives/</loc>
+        <lastmod>2012-11-11T08:12:25-06:00</lastmod>
+    </url>
+    <url>
+        <loc>http://rohn.github.com/</loc>
+        <lastmod>2012-11-11T08:12:25-06:00</lastmod>
+    </url>
+</urlset>
