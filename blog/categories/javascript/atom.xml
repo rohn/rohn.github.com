@@ -4,14 +4,23 @@
   <title><![CDATA[Category: JavaScript | i am rohn]]></title>
   <link href="http://rohn.github.com/blog/categories/javascript/atom.xml" rel="self"/>
   <link href="http://rohn.github.com/"/>
-  <updated>2012-11-11T16:41:29-06:00</updated>
+  <updated>2012-11-11T20:13:24-06:00</updated>
   <id>http://rohn.github.com/</id>
   <author>
-    <name><![CDATA[Rohn]]></name>
+    <name><![CDATA[rohn]]></name>
     
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Promises... promises... promises...]]></title>
+    <link href="http://rohn.github.com/blog/2012/11/11/promises-dot-dot-dot-promises-dot-dot-dot-promises-dot-dot-dot/"/>
+    <updated>2012-11-11T20:01:00-06:00</updated>
+    <id>http://rohn.github.com/blog/2012/11/11/promises-dot-dot-dot-promises-dot-dot-dot-promises-dot-dot-dot</id>
+    <content type="html"><![CDATA[<p>JavaScript is asynchronous and event-driven. Operations that take a lengthy amount of time are non-blocking - you don't want to call a function and block until it completes. Instead you provide a <em>callback</em>, which is executed (or invoked) when the lengthy function completes. This is efficient and friendly, avoiding the need for threading, but gets a bit harder to implement when you have a series of operations that need to be executed one after another. This is where the Promise pattern comes in.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Avoiding this]]></title>
