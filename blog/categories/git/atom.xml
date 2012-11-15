@@ -4,7 +4,7 @@
   <title><![CDATA[Category: git | i am rohn]]></title>
   <link href="http://rohn.github.com/blog/categories/git/atom.xml" rel="self"/>
   <link href="http://rohn.github.com/"/>
-  <updated>2012-11-15T13:39:40-06:00</updated>
+  <updated>2012-11-15T13:44:00-06:00</updated>
   <id>http://rohn.github.com/</id>
   <author>
     <name><![CDATA[rohn]]></name>
@@ -18,8 +18,10 @@
     <link href="http://rohn.github.com/blog/2012/11/15/ignore-git-globally/"/>
     <updated>2012-11-15T13:32:00-06:00</updated>
     <id>http://rohn.github.com/blog/2012/11/15/ignore-git-globally</id>
-    <content type="html"><![CDATA[<p>An easy to understand introduction to global .gitignores. And for some samples check out this <a href="https://github.com/github/gitignore/tree/master/Global">github repo</a>.
+    <content type="html"><![CDATA[<p>An easy to understand introduction to global .gitignores. And for some samples check out this <a href="https://github.com/github/gitignore/tree/master/Global">github repo</a>.<br/>
 This is a great alternative (and the right way of doing it) to adding OS specific files to every project's .gitignore file. No longer will my coworkers need to roll their eyes at me when I add .DS_Store to our .gitignore in the repo (and maybe I can get them to stop littering the repo with Thumbs.db files too).</p>
+
+<p>The official <a href="https://help.github.com/articles/ignoring-files">github help page</a>.</p>
 ]]></content>
   </entry>
   
