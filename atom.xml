@@ -4,7 +4,7 @@
   <title><![CDATA[i am rohn]]></title>
   <link href="http://rohn.github.com/atom.xml" rel="self"/>
   <link href="http://rohn.github.com/"/>
-  <updated>2012-11-15T13:37:24-06:00</updated>
+  <updated>2012-11-15T13:39:40-06:00</updated>
   <id>http://rohn.github.com/</id>
   <author>
     <name><![CDATA[rohn]]></name>
@@ -91,7 +91,7 @@ This is a great alternative (and the right way of doing it) to adding OS specifi
     <link href="http://rohn.github.com/blog/2012/11/10/hello-world/"/>
     <updated>2012-11-10T22:30:00-06:00</updated>
     <id>http://rohn.github.com/blog/2012/11/10/hello-world</id>
-    <content type="html"><![CDATA[
+    <content type="html"><![CDATA[<p>in how many languages can you say &#8220;Hello World&#8221;?</p>
 ]]></content>
   </entry>
   
